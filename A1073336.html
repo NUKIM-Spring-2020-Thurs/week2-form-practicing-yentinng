@@ -46,19 +46,19 @@
 
 	<div id="b">
 		<center>
-		<form action="homewwork.php" method="POST"> 
-		姓名 : 	<input type="text" placeholder="就是您的大名" name="name"  id="c"><br>
+		<form action="homework.php" method="POST"> 
+		姓名 : 	<input type="text" placeholder="就是您的大名" name="name"  id="c" required><br>
 		性別 : 
-		<input type="radio" name="gender" value="M" id="c">男
-		<input type="radio" name="gender" value="F" id="c">女<br>
-		出生年月日 : <input type="date" name="birth" id="c"><br>
-		身分證字號 : ：<input type="text" name="personal_id" placeholder="ex : E123456789" id="c"><br>
-		連絡電話 : 	<input type="text"  name="phonenumber" placeholder="ex : 0952052020" id="c"><br>
-		聯絡E-mail : <input type="email" name="mail" placeholder="ex : xxx@gmail.com" id="c"><br>
-		通訊地址 : <input type="text" name="address" placeholder="請輸入詳細地址" id="c"><br>
-		就讀何所高中職 : <input type="text" name="school" placeholder="ex : 瑞祥高中" id="c"><br>
-		緊急聯絡人姓名 : 	<input type="text"  name="parentname" placeholder="請輸入全名" id="c"><br>
-		緊急聯絡人電話 : 	<input type="text"  name="parentname" placeholder="ex : 0952052020" id="c"><br>
+		<input type="radio" name="gender" value="M" id="c" required>男
+		<input type="radio" name="gender" value="F" id="c" required>女<br>
+		出生年月日 : <input type="date" name="birth" id="c" required><br>
+		身分證字號 ：<input type="text" name="personal_id" placeholder="ex : E123456789" id="c" required><br>
+		連絡電話 : 	<input type="text"  name="phonenumber" placeholder="ex : 0952052020" id="c" required><br>
+		聯絡E-mail : <input type="email" name="mail" placeholder="ex : xxx@gmail.com" id="c" required><br>
+		通訊地址 : <input type="text" name="address" placeholder="請輸入詳細地址" id="c" required><br>
+		就讀何所高中職 : <input type="text" name="school" placeholder="ex : 瑞祥高中" id="c" required><br>
+		緊急聯絡人姓名 : 	<input type="text"  name="parentname" placeholder="請輸入全名" id="c" required><br>
+		緊急聯絡人電話 : 	<input type="text"  name="parentname" placeholder="ex : 0952052020" id="c" required><br>
 		飲食習慣 : 
 		<input type="radio" name="eat" value="M" id="c">葷食
 		<input type="radio" name="eat" value="F" id="c">素食
@@ -81,7 +81,9 @@
 
 		備註 : <textarea rows="10" cols="500" name="comment" style="width: 500px;margin-top: 10px">
 Please introduce yourself briefly
-		</textarea>
+		</textarea><br>
+		<input type="submit" value="提交" name="">
+		<input type="reset" value="全部重填" name=""><br>
 		</center>
 	</div>
 
